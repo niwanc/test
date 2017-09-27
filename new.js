@@ -2,12 +2,12 @@
  * Created by niwantha on 9/28/17.
  */
 const builder = require('botbuilder');
-const env = process.env;
+
 function init(app) {
 // Create chat bot and binding
     const connector = new builder.ChatConnector({
-        appId: env.BOT_APP_ID,
-        appPassword: env.BOT_APP_PASSWORD,
+        appId: 'bd67e9db-adc7-4f76-915f-365b80eaf750',
+        appPassword: 'ZKhv31TZ3X2mpLkftymfXUL',
     });
     app.post('/api/news', connector.listen());
     const bot = new builder.UniversalBot(connector, (session) => {
