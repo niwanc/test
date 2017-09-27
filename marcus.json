@@ -1,0 +1,19 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "marcus",
+  "configurations": [{
+
+    "type" : "node",
+    "request":"launch",
+    "name":"Launch Program",
+    "program":"${workspaceRoot}/app.js",
+    "env":{
+      "BOT_APP_ID":"bd67e9db-adc7-4f76-915f-365b80eaf750",
+      "BOT_APP_PASSWORD":"ZKhv31TZ3X2mpLkftymfXUL",
+      "PORT":"3001"
+
+    }
+
+  }]
+}
