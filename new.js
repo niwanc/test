@@ -19,5 +19,8 @@ function init(app) {
     }).triggerAction({
         matches: 'Help',
 });
+    console.log(connector);
 }
 module.exports.init = init;
+
+console.log('mee here');

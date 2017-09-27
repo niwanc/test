@@ -24,6 +24,10 @@ app.use((err, req, res, next) => {
 console.error(err.stack);
 return res.status(500).json({ message: err.message });
 });
+
 app.listen(process.env.PORT || 3000, () => {
     console.log('Example app listening on port 3000!');
 });
+
+const newsbot = require('./new');
+newsbot.init(app);
